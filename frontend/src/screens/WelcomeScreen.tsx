@@ -34,6 +34,7 @@ const WelcomeScreen = ({ navigation }: any) => {
             type="cyan"
             style={styles.button}
           />
+          {/* Tombol menuju halaman Registrasi */}
           <GradientButton
             title="Buat Akun"
             onPress={() => navigation.navigate('Register')}
