@@ -13,7 +13,7 @@ const register = async (req, res) => {
         // Check if user already exists
         const existingUser = await userModel.getUserByEmail(email);
         if (existingUser) {
-            return res.status(400).json({ success: false, message: 'Email already exists' });
+            return res.status(400).json({ success: false, message: 'Email sudah terdaftar' });
         }
 
         // Hash password
