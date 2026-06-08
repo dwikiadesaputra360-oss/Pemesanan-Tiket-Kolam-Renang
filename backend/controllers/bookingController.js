@@ -20,6 +20,8 @@ const createBooking = async (req, res) => {
 
         // Menampilkan pesan kesalahan pada server
         console.error('Kesalahan saat membuat pemesanan:', error);
+
+        // Mengirim respons jika terjadi kesalahan pada server
         res.status(500).json({ success: false, message: 'Terjadi kesalahan pada server' });
     }
 };
