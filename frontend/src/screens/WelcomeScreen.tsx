@@ -47,6 +47,7 @@ const WelcomeScreen = ({ navigation }: any) => {
   );
 };
 
+// Kumpulan style untuk komponen WelcomeScreen
 const styles = StyleSheet.create({
   container: {
     flex: 1,
