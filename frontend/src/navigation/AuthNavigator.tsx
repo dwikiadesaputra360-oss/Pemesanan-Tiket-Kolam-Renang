@@ -12,6 +12,7 @@ import AppNavigator from './AppNavigator';
 // Membuat stack navigator untuk proses autentikasi
 const Stack = createNativeStackNavigator<any, any>();
 
+// Komponen navigator autentikasi
 const AuthNavigator = () => {
   return (
     <Stack.Navigator
