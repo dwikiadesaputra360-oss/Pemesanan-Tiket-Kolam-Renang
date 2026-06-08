@@ -30,6 +30,7 @@ const LoginScreen = ({ navigation }: any) => {
       // Menampilkan pesan kesalahan jika login gagal
       Alert.alert('Gagal', error.response?.data?.message || 'Login gagal, periksa kredensial Anda');
     } finally {
+      // Mengembalikan status loading ke false
       setLoading(false);
     }
   };
