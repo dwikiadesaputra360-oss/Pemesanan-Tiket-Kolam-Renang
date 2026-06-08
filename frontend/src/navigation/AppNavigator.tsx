@@ -44,6 +44,8 @@ const AppNavigator = () => {
         component={TicketListScreen} 
         options={{ title: 'Pilih Tiket' }} 
       />
+
+      {/* Halaman konfirmasi pemesanan tiket */}
       <Stack.Screen 
         name="Booking" 
         component={BookingScreen} 
