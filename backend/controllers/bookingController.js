@@ -21,7 +21,7 @@ const getHistory = async (req, res) => {
         const history = await bookingModel.getAllBookings();
         res.status(200).json({ success: true, data: history });
     } catch (error) {
-        console.error('Error fetching booking history:', error);
+        console.error('Kesalahan saat mengambil riwayat pemesanan:', error);
         res.status(500).json({ success: false, message: 'Server error' });
     }
 };
