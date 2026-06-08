@@ -18,6 +18,8 @@ const RegisterScreen = ({ navigation }: any) => {
   const [agreeTerms, setAgreeTerms] = useState(false);
 
   const handleRegister = async () => {
+
+     // Memeriksa apakah semua kolom sudah diisi
     if (!fullName || !email || !password || !confirmPassword) {
       Alert.alert('Peringatan', 'Tolong isi semua bidang');
       return;
