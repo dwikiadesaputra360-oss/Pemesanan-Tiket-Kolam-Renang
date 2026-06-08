@@ -78,6 +78,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginBottom: 10,
   },
+  // Container untuk tombol di bagian bawah layar
   buttonContainer: {
     paddingHorizontal: 40,
     paddingBottom: 60,
