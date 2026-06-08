@@ -5,7 +5,7 @@ const createBooking = async (req, res) => {
         const { user_name, ticket_id, quantity, total_price } = req.body;
         
         if (!user_name || !ticket_id || !quantity || !total_price) {
-            return res.status(400).json({ success: false, message: 'Missing required fields' });
+            return res.status(400).json({ success: false, message: 'Semua kolom wajib diisi' });
         }
 
         const newBooking = await bookingModel.createBooking(user_name, ticket_id, quantity, total_price);
