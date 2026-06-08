@@ -20,7 +20,7 @@ const register = async (req, res) => {
         const salt = await bcrypt.genSalt(10);
         const hashedPassword = await bcrypt.hash(password, salt);
 
-        // Save user
+        // Simpan data pengguna
         const newUser = await userModel.createUser(fullName, email, hashedPassword);
 
         res.status(201).json({ success: true, message: 'Pendaftaran berhasil', data: newUser });
