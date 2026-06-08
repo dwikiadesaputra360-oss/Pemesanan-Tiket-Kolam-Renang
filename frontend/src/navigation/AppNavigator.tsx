@@ -37,6 +37,8 @@ const AppNavigator = () => {
         component={HomeScreen} 
         options={{ title: 'WaterJoy Booking' }} 
       />
+
+      {/* Halaman untuk menampilkan daftar tiket */}
       <Stack.Screen 
         name="Tickets" 
         component={TicketListScreen} 
