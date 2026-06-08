@@ -30,6 +30,8 @@ const AuthNavigator = () => {
 
       {/* Halaman pendaftaran akun */}
       <Stack.Screen name="Register" component={RegisterScreen} />
+
+      {/* Navigator utama setelah pengguna berhasil masuk */}
       <Stack.Screen name="MainApp" component={AppNavigator} />
     </Stack.Navigator>
   );
