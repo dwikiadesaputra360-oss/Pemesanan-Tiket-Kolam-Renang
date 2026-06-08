@@ -8,6 +8,7 @@ import { loginUser } from '../services/api';
 import Wave from '../components/Wave';
 
 const LoginScreen = ({ navigation }: any) => {
+  // State untuk menyimpan email pengguna
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
