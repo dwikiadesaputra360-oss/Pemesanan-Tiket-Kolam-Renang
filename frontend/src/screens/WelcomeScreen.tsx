@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+   // Area aman perangkat (menghindari notch/status bar)
   safeArea: {
     flex: 1,
   },
