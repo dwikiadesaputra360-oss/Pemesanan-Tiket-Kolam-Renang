@@ -26,6 +26,8 @@ const LoginScreen = ({ navigation }: any) => {
         navigation.replace('MainApp');
       }
     } catch (error: any) {
+
+      // Menampilkan pesan kesalahan jika login gagal
       Alert.alert('Gagal', error.response?.data?.message || 'Login gagal, periksa kredensial Anda');
     } finally {
       setLoading(false);
