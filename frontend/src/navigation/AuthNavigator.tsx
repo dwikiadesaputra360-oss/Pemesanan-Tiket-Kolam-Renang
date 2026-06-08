@@ -27,6 +27,8 @@ const AuthNavigator = () => {
 
       {/* Halaman masuk (Login) */}
       <Stack.Screen name="Login" component={LoginScreen} />
+
+      {/* Halaman pendaftaran akun */}
       <Stack.Screen name="Register" component={RegisterScreen} />
       <Stack.Screen name="MainApp" component={AppNavigator} />
     </Stack.Navigator>
