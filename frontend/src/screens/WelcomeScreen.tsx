@@ -83,6 +83,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 40,
     paddingBottom: 60,
   },
+  // Style umum untuk setiap tombol
   button: {
     marginBottom: 20,
     width: '100%',
