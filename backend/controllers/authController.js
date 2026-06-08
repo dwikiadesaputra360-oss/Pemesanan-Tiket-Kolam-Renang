@@ -56,7 +56,7 @@ const login = async (req, res) => {
         res.status(200).json({ success: true, message: 'Berhasil Masuk', data: userData });
     } catch (error) {
         console.error('Login error:', error);
-        res.status(500).json({ success: false, message: 'Server error during login' });
+        res.status(500).json({ success: false, message: 'Terjadi kesalahan pada server saat masuk' });
     }
 };
 
