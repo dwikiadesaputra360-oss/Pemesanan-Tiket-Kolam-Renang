@@ -13,6 +13,8 @@ const LoginScreen = ({ navigation }: any) => {
 
   // State untuk menyimpan kata sandi pengguna
   const [password, setPassword] = useState('');
+
+  // State untuk mengatur status proses login
   const [loading, setLoading] = useState(false);
 
   // Fungsi proses login
