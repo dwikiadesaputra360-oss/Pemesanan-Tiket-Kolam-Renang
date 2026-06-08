@@ -50,7 +50,7 @@ const login = async (req, res) => {
             return res.status(400).json({ success: false, message: 'Email atau kata sandi salah' });
         }
 
-        // Exclude password from response
+        // Hilangkan kata sandi dari data respons
         const { password: _, ...userData } = user;
 
         res.status(200).json({ success: true, message: 'Berhasil Masuk', data: userData });
