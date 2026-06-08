@@ -16,7 +16,7 @@ const register = async (req, res) => {
             return res.status(400).json({ success: false, message: 'Email sudah terdaftar' });
         }
 
-        // Hash password
+        // Enkripsi kata sandi
         const salt = await bcrypt.genSalt(10);
         const hashedPassword = await bcrypt.hash(password, salt);
 
