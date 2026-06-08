@@ -20,7 +20,7 @@ app.use('/api/booking', bookingRoutes);
 
 // Root route
 app.get('/', (req, res) => {
-    res.json({ message: 'Welcome to Pool Ticket API' });
+    res.json({ message: 'Selamat datang di API Pemesanan Tiket Kolam Renang' });
 });
 
 app.listen(PORT, () => {
