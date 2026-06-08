@@ -8,6 +8,7 @@ import BookingScreen from '../screens/BookingScreen';
 import HistoryScreen from '../screens/HistoryScreen';
 import { RootStackParamList } from '../types';
 
+// Membuat stack navigator dengan tipe parameter yang telah ditentukan
 const Stack = createNativeStackNavigator<RootStackParamList, any>();
 
 const AppNavigator = () => {
