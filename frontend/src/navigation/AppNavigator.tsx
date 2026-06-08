@@ -30,6 +30,8 @@ const AppNavigator = () => {
         },
       }}
     >
+
+      {/* Halaman utama aplikasi */}
       <Stack.Screen 
         name="Home" 
         component={HomeScreen} 
