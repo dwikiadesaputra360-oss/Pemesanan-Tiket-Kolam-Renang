@@ -25,6 +25,7 @@ const WelcomeScreen = ({ navigation }: any) => {
           <Text style={styles.title}>Selamat Datang di RenangYuk</Text>
         </View>
 
+         {/* Bagian bawah berisi tombol aksi */}
         <View style={styles.buttonContainer}>
           <GradientButton
             title="Masuk"
