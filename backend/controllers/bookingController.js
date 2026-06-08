@@ -11,6 +11,7 @@ const createBooking = async (req, res) => {
             return res.status(400).json({ success: false, message: 'Semua kolom wajib diisi' });
         }
 
+         // Menyimpan data pemesanan ke database
         const newBooking = await bookingModel.createBooking(user_name, ticket_id, quantity, total_price);
         res.status(201).json({ success: true, data: newBooking });
     } catch (error) {
