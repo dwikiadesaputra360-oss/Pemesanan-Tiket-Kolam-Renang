@@ -5,7 +5,7 @@ const getAllTickets = async (req, res) => {
         const tickets = await ticketModel.getAllTickets();
         res.status(200).json({ success: true, data: tickets });
     } catch (error) {
-        console.error('Error fetching tickets:', error);
+        console.error('Kesalahan saat mengambil data tiket:', error);
         res.status(500).json({ success: false, message: 'Server error' });
     }
 };
