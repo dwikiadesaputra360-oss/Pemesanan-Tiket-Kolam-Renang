@@ -18,6 +18,8 @@ const AppNavigator = () => {
     // Menentukan halaman pertama yang ditampilkan saat aplikasi dibuka
     <Stack.Navigator
       initialRouteName="Home"
+
+      // Konfigurasi tampilan header untuk seluruh halaman
       screenOptions={{
         headerStyle: {
           backgroundColor: '#0066cc',
