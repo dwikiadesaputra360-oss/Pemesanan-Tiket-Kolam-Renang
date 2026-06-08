@@ -11,7 +11,7 @@ const createBooking = async (req, res) => {
         const newBooking = await bookingModel.createBooking(user_name, ticket_id, quantity, total_price);
         res.status(201).json({ success: true, data: newBooking });
     } catch (error) {
-        console.error('Error creating booking:', error);
+        console.error('Kesalahan saat membuat pemesanan:', error);
         res.status(500).json({ success: false, message: 'Server error' });
     }
 };
