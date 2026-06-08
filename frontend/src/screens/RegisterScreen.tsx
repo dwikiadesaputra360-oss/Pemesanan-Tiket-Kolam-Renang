@@ -51,6 +51,7 @@ const RegisterScreen = ({ navigation }: any) => {
       // Menampilkan pesan kesalahan jika pendaftaran gagal
       Alert.alert('Gagal', error.response?.data?.message || 'Gagal melakukan pendaftaran');
     } finally {
+      // Mengembalikan status loading ke false
       setLoading(false);
     }
   };
