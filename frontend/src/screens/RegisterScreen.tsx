@@ -8,6 +8,8 @@ import { registerUser } from '../services/api';
 import Wave from '../components/Wave';
 
 const RegisterScreen = ({ navigation }: any) => {
+  
+  // State untuk menyimpan data input pengguna
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
