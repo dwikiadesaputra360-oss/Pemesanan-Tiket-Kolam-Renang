@@ -47,6 +47,8 @@ const RegisterScreen = ({ navigation }: any) => {
         navigation.navigate('Login');
       }
     } catch (error: any) {
+
+      // Menampilkan pesan kesalahan jika pendaftaran gagal
       Alert.alert('Gagal', error.response?.data?.message || 'Gagal melakukan pendaftaran');
     } finally {
       setLoading(false);
