@@ -21,6 +21,7 @@ const WelcomeScreen = ({ navigation }: any) => {
             style={styles.logoImage}
             resizeMode="contain"
           />
+          {/* Judul aplikasi */}
           <Text style={styles.title}>Selamat Datang di RenangYuk</Text>
         </View>
 
