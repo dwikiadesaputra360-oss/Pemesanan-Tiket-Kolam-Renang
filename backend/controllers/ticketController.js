@@ -12,6 +12,8 @@ const getAllTickets = async (req, res) => {
 
         // Menampilkan pesan error
         console.error('Kesalahan saat mengambil data tiket:', error);
+
+        // Mengirim respons jika terjadi kesalahan pada server
         res.status(500).json({ success: false, message: 'Terjadi kesalahan pada server' });
     }
 };
