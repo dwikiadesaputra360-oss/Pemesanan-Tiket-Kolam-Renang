@@ -14,6 +14,8 @@ const Stack = createNativeStackNavigator<RootStackParamList, any>();
 // Komponen navigator utama aplikasi
 const AppNavigator = () => {
   return (
+
+    // Menentukan halaman pertama yang ditampilkan saat aplikasi dibuka
     <Stack.Navigator
       initialRouteName="Home"
       screenOptions={{
