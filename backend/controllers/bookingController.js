@@ -1,5 +1,6 @@
 const bookingModel = require('../../api/models/bookingModel');
 
+// Fungsi untuk membuat pemesanan tiket baru
 const createBooking = async (req, res) => {
     try {
         const { user_name, ticket_id, quantity, total_price } = req.body;
