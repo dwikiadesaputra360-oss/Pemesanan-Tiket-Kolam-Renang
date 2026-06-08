@@ -64,6 +64,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 30,
   },
+   // Ukuran dan jarak logo
   logoImage: {
     width: 150,
     height: 150,
