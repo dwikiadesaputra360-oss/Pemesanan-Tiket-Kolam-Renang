@@ -11,6 +11,7 @@ import { RootStackParamList } from '../types';
 // Membuat stack navigator dengan tipe parameter yang telah ditentukan
 const Stack = createNativeStackNavigator<RootStackParamList, any>();
 
+// Komponen navigator utama aplikasi
 const AppNavigator = () => {
   return (
     <Stack.Navigator
