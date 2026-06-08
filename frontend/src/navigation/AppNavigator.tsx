@@ -51,6 +51,8 @@ const AppNavigator = () => {
         component={BookingScreen} 
         options={{ title: 'Konfirmasi Pesanan' }} 
       />
+
+      {/* Halaman riwayat pemesanan */}
       <Stack.Screen 
         name="History" 
         component={HistoryScreen} 
