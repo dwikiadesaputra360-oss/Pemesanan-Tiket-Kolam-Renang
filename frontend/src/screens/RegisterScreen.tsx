@@ -30,6 +30,8 @@ const RegisterScreen = ({ navigation }: any) => {
       Alert.alert('Peringatan', 'Konfirmasi kata sandi tidak cocok');
       return;
     }
+
+    // Memastikan pengguna menyetujui syarat dan ketentuan
     if (!agreeTerms) {
       Alert.alert('Peringatan', 'Anda harus menyetujui syarat & ketentuan');
       return;
