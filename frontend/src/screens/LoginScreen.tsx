@@ -10,6 +10,8 @@ import Wave from '../components/Wave';
 const LoginScreen = ({ navigation }: any) => {
   // State untuk menyimpan email pengguna
   const [email, setEmail] = useState('');
+
+  // State untuk menyimpan kata sandi pengguna
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
 
