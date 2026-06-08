@@ -27,6 +27,7 @@ const WelcomeScreen = ({ navigation }: any) => {
 
          {/* Bagian bawah berisi tombol aksi */}
         <View style={styles.buttonContainer}>
+          {/* Tombol menuju halaman Login */}
           <GradientButton
             title="Masuk"
             onPress={() => navigation.navigate('Login')}
