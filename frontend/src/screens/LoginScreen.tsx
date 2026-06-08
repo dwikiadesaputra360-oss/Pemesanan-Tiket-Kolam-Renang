@@ -19,6 +19,8 @@ const LoginScreen = ({ navigation }: any) => {
 
   // Fungsi proses login
   const handleLogin = async () => {
+
+    // Memeriksa apakah email dan kata sandi telah diisi
     if (!email || !password) {
       Alert.alert('Peringatan', 'Email dan password harus diisi');
       return;
