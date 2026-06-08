@@ -40,6 +40,8 @@ const getHistory = async (req, res) => {
     } catch (error) {
         // Menampilkan pesan kesalahan pada server
         console.error('Kesalahan saat mengambil riwayat pemesanan:', error);
+
+        // Mengirim respons jika terjadi kesalahan pada server
         res.status(500).json({ success: false, message: 'Terjadi kesalahan pada server' });
     }
 };
