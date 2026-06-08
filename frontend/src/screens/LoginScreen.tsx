@@ -13,6 +13,7 @@ const LoginScreen = ({ navigation }: any) => {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
 
+  // Fungsi proses login
   const handleLogin = async () => {
     if (!email || !password) {
       Alert.alert('Peringatan', 'Email dan password harus diisi');
