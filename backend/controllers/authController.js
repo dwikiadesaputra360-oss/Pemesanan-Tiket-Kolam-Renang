@@ -41,7 +41,7 @@ const login = async (req, res) => {
         // Find user
         const user = await userModel.getUserByEmail(email);
         if (!user) {
-            return res.status(400).json({ success: false, message: 'Invalid credentials' });
+            return res.status(400).json({ success: false, message: 'Email atau kata sandi salah' });
         }
 
         // Check password
