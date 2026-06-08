@@ -10,7 +10,7 @@ const register = async (req, res) => {
             return res.status(400).json({ success: false, message: 'Semua kolom wajib diisi' });
         }
 
-        // Check if user already exists
+        // Periksa apakah pengguna sudah terdaftar
         const existingUser = await userModel.getUserByEmail(email);
         if (existingUser) {
             return res.status(400).json({ success: false, message: 'Email sudah terdaftar' });
