@@ -24,6 +24,8 @@ const RegisterScreen = ({ navigation }: any) => {
       Alert.alert('Peringatan', 'Tolong isi semua bidang');
       return;
     }
+
+    // Memeriksa kecocokan kata sandi dan konfirmasi kata sandi
     if (password !== confirmPassword) {
       Alert.alert('Peringatan', 'Konfirmasi kata sandi tidak cocok');
       return;
