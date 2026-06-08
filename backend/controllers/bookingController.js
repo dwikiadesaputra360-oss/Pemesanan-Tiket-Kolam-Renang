@@ -5,7 +5,8 @@ const createBooking = async (req, res) => {
     try {
         // Mengambil data pemesanan dari body request
         const { user_name, ticket_id, quantity, total_price } = req.body;
-        
+
+         // Memeriksa apakah semua data yang dibutuhkan sudah diisi
         if (!user_name || !ticket_id || !quantity || !total_price) {
             return res.status(400).json({ success: false, message: 'Semua kolom wajib diisi' });
         }
