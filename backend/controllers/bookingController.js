@@ -33,6 +33,8 @@ const getHistory = async (req, res) => {
 
         // Mengambil data riwayat pemesanan dari database
         const history = await bookingModel.getAllBookings();
+
+        // Mengirim data riwayat pemesanan ke client
         res.status(200).json({ success: true, data: history });
     } catch (error) {
         console.error('Kesalahan saat mengambil riwayat pemesanan:', error);
