@@ -38,7 +38,7 @@ const login = async (req, res) => {
             return res.status(400).json({ success: false, message: 'Email dan kata sandi wajib diisi' });
         }
 
-        // Find user
+        // Cari pengguna berdasarkan email
         const user = await userModel.getUserByEmail(email);
         if (!user) {
             return res.status(400).json({ success: false, message: 'Email atau kata sandi salah' });
