@@ -1,6 +1,7 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+// Mengimpor halaman-halaman yang digunakan dalam navigasi
 import HomeScreen from '../screens/HomeScreen';
 import TicketListScreen from '../screens/TicketListScreen';
 import BookingScreen from '../screens/BookingScreen';
