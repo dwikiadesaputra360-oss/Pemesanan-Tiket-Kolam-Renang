@@ -53,7 +53,7 @@ const login = async (req, res) => {
         // Exclude password from response
         const { password: _, ...userData } = user;
 
-        res.status(200).json({ success: true, message: 'Login successful', data: userData });
+        res.status(200).json({ success: true, message: 'Berhasil Masuk', data: userData });
     } catch (error) {
         console.error('Login error:', error);
         res.status(500).json({ success: false, message: 'Server error during login' });
