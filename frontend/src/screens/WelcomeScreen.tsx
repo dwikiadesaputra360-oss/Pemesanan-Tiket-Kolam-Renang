@@ -7,6 +7,7 @@ import GradientButton from '../components/GradientButton';
 // judul aplikasi, serta tombol navigasi ke Login dan Register.
 const WelcomeScreen = ({ navigation }: any) => {
   return (
+    // Background menggunakan gradasi warna biru
     <LinearGradient
       colors={['#103783', '#00b4db']}
       style={styles.container}
