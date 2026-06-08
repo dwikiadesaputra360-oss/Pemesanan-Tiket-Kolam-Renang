@@ -30,6 +30,8 @@ const createBooking = async (req, res) => {
 // Fungsi untuk mengambil seluruh riwayat pemesanan
 const getHistory = async (req, res) => {
     try {
+
+        // Mengambil data riwayat pemesanan dari database
         const history = await bookingModel.getAllBookings();
         res.status(200).json({ success: true, data: history });
     } catch (error) {
