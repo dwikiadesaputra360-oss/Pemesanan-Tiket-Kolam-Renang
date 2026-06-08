@@ -5,6 +5,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import WelcomeScreen from '../screens/WelcomeScreen';
 import LoginScreen from '../screens/LoginScreen';
 import RegisterScreen from '../screens/RegisterScreen';
+
+// Mengimpor navigator utama aplikasi
 import AppNavigator from './AppNavigator';
 
 const Stack = createNativeStackNavigator<any, any>();
