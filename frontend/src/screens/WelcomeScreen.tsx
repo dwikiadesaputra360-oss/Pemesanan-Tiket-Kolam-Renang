@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
   },
+  // Posisi konten utama di tengah layar
   content: {
     flex: 1,
     justifyContent: 'center',
