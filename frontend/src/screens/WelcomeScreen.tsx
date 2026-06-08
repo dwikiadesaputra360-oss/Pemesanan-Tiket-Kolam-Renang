@@ -4,7 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import GradientButton from '../components/GradientButton';
 
 // Halaman awal aplikasi yang menampilkan logo,
-
+// judul aplikasi, serta tombol navigasi ke Login dan Register.
 const WelcomeScreen = ({ navigation }: any) => {
   return (
     <LinearGradient
