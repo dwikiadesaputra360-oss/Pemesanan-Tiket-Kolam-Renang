@@ -5,6 +5,8 @@ const getAllTickets = async (req, res) => {
     try {
         // Fungsi untuk ambil data tiket dari database
         const tickets = await ticketModel.getAllTickets();
+
+        // Mengirim respon berhasil 
         res.status(200).json({ success: true, data: tickets });
     } catch (error) {
         console.error('Kesalahan saat mengambil data tiket:', error);
