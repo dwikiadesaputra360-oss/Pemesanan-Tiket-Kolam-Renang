@@ -17,6 +17,8 @@ const createBooking = async (req, res) => {
         // Mengirim respons berhasil beserta data pemesanan yang telah dibuat
         res.status(201).json({ success: true, data: newBooking });
     } catch (error) {
+
+        // Menampilkan pesan kesalahan pada server
         console.error('Kesalahan saat membuat pemesanan:', error);
         res.status(500).json({ success: false, message: 'Terjadi kesalahan pada server' });
     }
