@@ -39,6 +39,8 @@ const RegisterScreen = ({ navigation }: any) => {
     
     setLoading(true);
     try {
+
+      // Mengirim data pendaftaran ke API
       const response = await registerUser({ fullName, email, password });
       if (response.data.success) {
         Alert.alert('Sukses', 'Pendaftaran berhasil! Silakan login.');
