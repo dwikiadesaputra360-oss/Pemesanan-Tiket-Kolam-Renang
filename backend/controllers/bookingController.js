@@ -13,6 +13,8 @@ const createBooking = async (req, res) => {
 
          // Menyimpan data pemesanan ke database
         const newBooking = await bookingModel.createBooking(user_name, ticket_id, quantity, total_price);
+        
+        // Mengirim respons berhasil beserta data pemesanan yang telah dibuat
         res.status(201).json({ success: true, data: newBooking });
     } catch (error) {
         console.error('Kesalahan saat membuat pemesanan:', error);
