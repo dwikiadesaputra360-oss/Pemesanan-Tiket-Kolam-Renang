@@ -26,6 +26,8 @@ const createBooking = async (req, res) => {
     }
 };
 
+
+// Fungsi untuk mengambil seluruh riwayat pemesanan
 const getHistory = async (req, res) => {
     try {
         const history = await bookingModel.getAllBookings();
