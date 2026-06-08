@@ -9,6 +9,7 @@ import RegisterScreen from '../screens/RegisterScreen';
 // Mengimpor navigator utama aplikasi
 import AppNavigator from './AppNavigator';
 
+// Membuat stack navigator untuk proses autentikasi
 const Stack = createNativeStackNavigator<any, any>();
 
 const AuthNavigator = () => {
