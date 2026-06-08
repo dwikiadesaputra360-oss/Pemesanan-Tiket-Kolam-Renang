@@ -49,6 +49,7 @@ const WelcomeScreen = ({ navigation }: any) => {
 
 // Kumpulan style untuk komponen WelcomeScreen
 const styles = StyleSheet.create({
+   // Container utama memenuhi seluruh layar
   container: {
     flex: 1,
   },
