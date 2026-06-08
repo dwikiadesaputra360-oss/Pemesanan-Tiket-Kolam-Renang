@@ -47,7 +47,7 @@ const login = async (req, res) => {
         // Check password
         const isMatch = await bcrypt.compare(password, user.password);
         if (!isMatch) {
-            return res.status(400).json({ success: false, message: 'Invalid credentials' });
+            return res.status(400).json({ success: false, message: 'Email atau kata sandi salah' });
         }
 
         // Exclude password from response
