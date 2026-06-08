@@ -1,5 +1,6 @@
 const ticketModel = require('../../api/models/ticketModel');
 
+// Fungsi untuk mengambil semua data tiket yang ada
 const getAllTickets = async (req, res) => {
     try {
         const tickets = await ticketModel.getAllTickets();
