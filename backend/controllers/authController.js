@@ -44,7 +44,7 @@ const login = async (req, res) => {
             return res.status(400).json({ success: false, message: 'Email atau kata sandi salah' });
         }
 
-        // Check password
+        // Periksa kata sandi
         const isMatch = await bcrypt.compare(password, user.password);
         if (!isMatch) {
             return res.status(400).json({ success: false, message: 'Email atau kata sandi salah' });
