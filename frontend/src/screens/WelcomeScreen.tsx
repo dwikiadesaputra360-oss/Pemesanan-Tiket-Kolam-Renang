@@ -12,7 +12,7 @@ const WelcomeScreen = ({ navigation }: any) => {
       colors={['#103783', '#00b4db']}
       style={styles.container}
     >
-     /* SafeAreaView memastikan konten tidak tertutup notch atau status bar */
+    {/* SafeAreaView memastikan konten tidak tertutup notch atau status bar */}
       <SafeAreaView style={styles.safeArea}>
         <View style={styles.content}>
           <Image 
