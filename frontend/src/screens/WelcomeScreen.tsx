@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
     height: 150,
     marginBottom: 40,
   },
+   // Style judul aplikasi
   title: {
     fontSize: 22,
     fontWeight: 'bold',
