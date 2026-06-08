@@ -20,6 +20,7 @@ const LoginScreen = ({ navigation }: any) => {
 
     setLoading(true);
     try {
+      // Mengirim data login ke API
       const response = await loginUser({ email, password });
       if (response.data.success) {
         navigation.replace('MainApp');
