@@ -1,12 +1,13 @@
 const bcrypt = require('bcryptjs');
 const userModel = require('../../api/models/userModel');
 
+
 const register = async (req, res) => {
     try {
         const { fullName, email, password } = req.body;
 
         if (!fullName || !email || !password) {
-            return res.status(400).json({ success: false, message: 'All fields are required' });
+            return res.status(400).json({ success: false, message: 'Semua kolom wajib diisi' });
         }
 
         // Check if user already exists
