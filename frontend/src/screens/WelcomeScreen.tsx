@@ -14,6 +14,7 @@ const WelcomeScreen = ({ navigation }: any) => {
     >
     {/* SafeAreaView memastikan konten tidak tertutup notch atau status bar */}
       <SafeAreaView style={styles.safeArea}>
+        {/* Bagian tengah layar berisi logo dan judul */}
         <View style={styles.content}>
           <Image 
             source={require('../../assets/logo.png')} 
